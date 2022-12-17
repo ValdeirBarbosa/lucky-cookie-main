@@ -5,7 +5,7 @@ Esta aplicação exibe uma nova mensagem a cada click no biscoito da sorte, sort
 Otimo estudo para consilidar o aprendizado de CSS e Javascript
 Aplicando keyframe animations e trasnsitions
 
- [Resultado final](https://duckduckgo.com)
+ [Resultado final]([https://duckduckgo.com](https://valdeirbarbosa.github.io/lucky-cookie-main/))
  
  
 >###Tecnologias utilizadas
