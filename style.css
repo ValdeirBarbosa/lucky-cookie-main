@@ -1,0 +1,185 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(45deg, #190361, #bb00ff);
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+
+  display: grid;
+  place-items: center;
+}
+
+main {
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  width: 42.8rem;
+  height: 42.8rem;
+  padding: 8.4rem 4.8rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  gap: 1.4rem;
+  align-items: center;
+  text-align: center;
+  max-width: 25.8rem;
+  color: #34355b;
+}
+
+main p {
+  width: 192px;
+  height: 20px;
+  left: calc(50% - 192px / 2 + 0.05px);
+  margin-top: 14px;
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #34355b;
+}
+
+.screen2 main {
+  padding: 0;
+  height: 56.4rem;
+  gap: 17px;
+  gap: 0;
+
+}
+
+main img {
+  margin-top: 2rem;
+  width: 300px;
+  height: 200px;
+}
+.screen1 main img:hover {
+  cursor: pointer;
+  animation: bounce 150ms 350ms backwards ease;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+button {
+  padding: 16px;
+  width: 174px;
+  height: 52px;
+  background: #ff9500;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  /* identical to box height */
+  text-align: center;
+  color: #ffffff;
+  transition: all 6000ms;
+  cursor: pointer;
+}
+button:hover {
+  background: #b9710e;
+}
+
+.container-msg {
+  text-align: center;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 5px;
+  margin-top: 1rem;
+  width: 293px;
+  /* height: 107px; */
+  color: #000000;
+  background: #e4edf1;
+  box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+  font-family: "Dancing Script";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  animation: topdown 1000ms 350ms backwards ease;
+}
+
+.hiden {
+  display: none;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes topdown {
+
+  0% {
+    opacity: 0;
+    width: 30px;
+    font-size: 2px;
+    transform: translatey(150px);
+    color: transparent;
+  }
+  50% {
+    opacity: 0.5;
+    color: transparent;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: rotate(5deg);
+    transform: translate(-5px);
+  }
+
+  50% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+    transform: translate(5px);
+  }
+}
