@@ -8,7 +8,7 @@ Aplicando keyframe animations e trasnsitions
  [Acessar site](https://valdeirbarbosa.github.io/lucky-cookie-main/)
  
  
->###Tecnologias utilizadas
+>### Tecnologias utilizadas
 > - Html5
 > - CSS3
 > - Javascript
